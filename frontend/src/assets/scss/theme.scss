@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f6f6;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header {
+    width: 100%;
+    background: #272e71;
+    padding: 10px 20px;
+    .logo {
+        h1 {
+            margin: 0;
+            color: white;
+        }
+    }
+}
+
+/////////////// Aside
+
+.sidebar {
+    width: 300px;
+    background: transparent;
+    padding-left: 20px;
+    height: 100%;
+    border-right: 1px solid #bdbdbd;
+}
+
+ul.nav {
+    list-style-type: none;
+    padding: 0;
+    .nav-item {
+        padding: 10px 0;
+    }
+}
+
+.main {
+    width: calc(100% - 300px);
+    padding: 30px;
+}
