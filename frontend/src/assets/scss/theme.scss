@@ -72,3 +72,15 @@ ul.nav {
         width: 100%;
     }
 }
+
+.col-md-8 {
+    float: left;
+    width: 66.666666%;
+}
+
+.card {
+    background-color: white;
+    border-radius: 5px;
+    .card-body {
+    }
+}
