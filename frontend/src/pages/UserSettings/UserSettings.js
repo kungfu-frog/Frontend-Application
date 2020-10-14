@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { useGlobalState } from '../../store';
+import { useGlobalState, setUser } from '../../store';
 import Tab from '../../components/Tab';
+import AccountSettings from '../../components/AccountSettings';
 
 import './usersettings.scss';
 
@@ -10,11 +11,16 @@ const tabList = [
 ];
 
 const UserSettings = () => {
+  const [user] = useGlobalState('user');
+  const setUserData = (user) => {
+    
+  }
+
   return (
-    <div className="col-md-8">
+    <div className="col-xl-8">
       <Tab tabList={tabList}>
         <Tab.Item key="account-settings">
-          Account-Settings
+          <AccountSettings user={user} setUser={setUserData}/>
         </Tab.Item>
 
         <Tab.Item key="user-information">

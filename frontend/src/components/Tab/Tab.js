@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import './tab.scss';
+import './style.scss';
 
 var Tab = ({ children, tabList }) => {
 	const [current, setCurrentTab] = useState(tabList[0].key);

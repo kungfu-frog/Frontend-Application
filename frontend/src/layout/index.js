@@ -7,9 +7,11 @@ const AdminLayout = props => {
     return (
         <div className="container">
             <Header/>
-            <Aside/>
-            <div className="main">
-                {props.children}
+            <div className="wrap">
+                <Aside/>
+                <div className="main">
+                    {props.children}
+                </div>
             </div>
             <Footer/>
         </div>
