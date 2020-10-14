@@ -37,11 +37,38 @@ ul.nav {
     list-style-type: none;
     padding: 0;
     .nav-item {
-        padding: 10px 0;
+        padding-left: 10px;
+        color: #666666;
+        &:hover {
+            background-color: #dbdbdb;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            padding: 15px 0;
+            display: block;
+        }
+
+        i {
+            margin-right: 10px;
+        }
     }
 }
 
 .main {
     width: calc(100% - 300px);
     padding: 30px;
+}
+
+@media (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid #bdbdbd; 
+    }
+
+    .main {
+        width: 100%;
+    }
 }

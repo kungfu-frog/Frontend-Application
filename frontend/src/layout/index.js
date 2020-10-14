@@ -8,7 +8,7 @@ const AdminLayout = props => {
         <div className="container">
             <Header/>
             <Aside/>
-            <div class="main">
+            <div className="main">
                 {props.children}
             </div>
             <Footer/>
