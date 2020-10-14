@@ -13,12 +13,13 @@ const UserSettings = () => {
   return (
     <div className="col-md-8">
       <Tab tabList={tabList}>
-        <div key="account-settings">
+        <Tab.Item key="account-settings">
           Account-Settings
-        </div>
-        <div key="user-information">
+        </Tab.Item>
+
+        <Tab.Item key="user-information">
           User Information
-        </div>
+        </Tab.Item>
       </Tab>
     </div>
   );

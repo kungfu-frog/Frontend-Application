@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 
 import './tab.scss';
 
-const Tab = ({ children, tabList }) => {
+var Tab = ({ children, tabList }) => {
 	const [current, setCurrentTab] = useState(tabList[0].key);
 
 	return (
@@ -26,6 +26,14 @@ const Tab = ({ children, tabList }) => {
 					})
 				}
 			</div>
+		</div>
+	);
+}
+
+Tab.Item = ({children, key}) => {
+	return (
+		<div key={key}>
+		{children}
 		</div>
 	);
 }
