@@ -4,9 +4,7 @@ import './style.scss';
 
 const UserInformation = ({user, setUser}) => {
     return (
-        <>
         
-        </>
     );
 }
 

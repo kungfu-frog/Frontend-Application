@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { useGlobalState, setUser } from '../../store';
+import { useGlobalState, setUser, setMessage, setError } from '../../store';
 import Tab from '../../components/Tab';
 import AccountSettings from '../../components/AccountSettings';
+import {updateUser} from '../../api';
 
 import './usersettings.scss';
 
@@ -13,7 +14,15 @@ const tabList = [
 const UserSettings = () => {
   const [user] = useGlobalState('user');
   const setUserData = (user) => {
-    
+    updateUser(user)
+    .then((res) => {
+      setUser({...res.user});
+      setMessage(res.message);
+      setTimeout(() => setMessage(''), 3000);
+    }, (err) => {
+      setError(err.error);
+      setTimeout(() => setError(''), 3000);
+    });
   }
 
   return (

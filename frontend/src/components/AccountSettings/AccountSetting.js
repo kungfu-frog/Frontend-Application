@@ -62,7 +62,7 @@ const AccountSettings = ({ user, setUser }) => {
 					<label>Email</label>
 					<input id="email" type="text" className="form-control" {...accountFormik.getFieldProps('email')}/>
 					{accountFormik.touched.email && accountFormik.errors.email && (
-						<div className="error">{accountFormik.errors.email}</div>
+						<div>{accountFormik.errors.email}</div>
 					)}
 				</div>
 				<div className="clear"></div>
@@ -73,7 +73,7 @@ const AccountSettings = ({ user, setUser }) => {
 					<label>Password</label>
 					<input id="password" type="password" className="form-control" {...accountFormik.getFieldProps('password')}/>
 					{accountFormik.touched.password && accountFormik.errors.password && (
-						<div className="error">{accountFormik.errors.password}</div>
+						<div>{accountFormik.errors.password}</div>
 					)}
 					<StrengthIndicator current={strength}/>
 				</div>
@@ -81,7 +81,7 @@ const AccountSettings = ({ user, setUser }) => {
 					<label>Confirm password</label>
 					<input id="passwordConfirmation" type="password" className="form-control" {...accountFormik.getFieldProps('passwordConfirmation')}/>
 					{accountFormik.touched.passwordConfirmation && accountFormik.errors.passwordConfirmation && (
-						<div className="error">{accountFormik.errors.passwordConfirmation}</div>
+						<div>{accountFormik.errors.passwordConfirmation}</div>
 					)}
 				</div>
 				<div className="clear"></div>

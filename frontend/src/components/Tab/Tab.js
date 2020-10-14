@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
 import './style.scss';
 
@@ -30,10 +30,10 @@ var Tab = ({ children, tabList }) => {
 	);
 }
 
-Tab.Item = ({children, key}) => {
+Tab.Item = ({ children}) => {
 	return (
-		<div key={key}>
-		{children}
+		<div>
+			{children}
 		</div>
 	);
 }
