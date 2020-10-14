@@ -53,6 +53,8 @@ ul.nav {
         i {
             margin-right: 10px;
         }
+
+        transition: background-color 0.5s;
     }
 }
 
@@ -76,11 +78,4 @@ ul.nav {
 .col-md-8 {
     float: left;
     width: 66.666666%;
-}
-
-.card {
-    background-color: white;
-    border-radius: 5px;
-    .card-body {
-    }
 }
