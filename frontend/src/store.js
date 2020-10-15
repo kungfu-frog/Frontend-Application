@@ -12,7 +12,8 @@ const { setGlobalState, useGlobalState } = createGlobalState({
     country: "Germany"
   },
   message: "",
-  error: ""
+  error: "",
+  sidebarVisibility: false
 })
 
 export const setUser = (user) => {
@@ -26,6 +27,11 @@ export const setMessage = (message) => {
 export const setError = (error) => {
   setGlobalState('error', error);
 }
+
+export const setSidebarVisibility = (visible) => {
+  setGlobalState('sidebarVisibility', visible);
+};
+
 export {
   useGlobalState
 }

@@ -1,9 +1,12 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import { useGlobalState } from '../store';
 
 const Aside = () => {
+    const [visible] = useGlobalState('sidebarVisibility');
+
     return (
-        <aside className="sidebar">
+        <aside className={"sidebar" + (visible ? ' show' : ' hide')}>
             <ul className="nav">
                 <li className="nav-item"><Link to="/"><i className="fa fa-home"></i>Home</Link></li>
                 <li className="nav-item"><Link to="/account"><i className="fa fa-bullhorn"></i>My Account</Link></li>

@@ -23,6 +23,16 @@ body {
             color: white;
         }
     }
+    display: flex;
+    .toggle-menu {
+        position: absolute;
+        left: 0;
+        line-height: 40px;
+        display: none;
+        color: white;
+        background: transparent;
+        border: 0;
+    }
 }
 
 /////////////// Aside
@@ -33,10 +43,11 @@ body {
 
 .sidebar {
     width: 300px;
-    background: transparent;
     padding-left: 20px;
     position: fixed;
     border-right: 1px solid #bdbdbd;
+    background-color: #f6f6f6;
+    z-index: 2;
 }
 
 ul.nav {
@@ -144,14 +155,27 @@ ul.nav {
 }
 
 @media (max-width: 800px) {
+    .header {
+        justify-content: center;
+        .toggle-menu {
+            display: block;
+            font-size: 24px;
+        }
+    }
     .sidebar {
         width: 100%;
         border: 0;
-        display: block;
-        position: relative;
         border-bottom: 1px solid #bdbdbd; 
         .nav {
             text-align: center;
+        }
+        &.show{
+            display: block;
+            position: relative;
+        }
+        &.hide{
+            position: relative;
+            display: none;
         }
     }
 
