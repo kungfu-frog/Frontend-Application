@@ -38,16 +38,6 @@ const UserInformation = ({ user, setUser }) => {
 		onSubmit: onSubmit
 	});
 
-	useEffect(() => {
-		console.log('test');
-		userFormik.setFieldValue('firstname', user.firstname);
-		userFormik.setFieldValue('firstname', user.lastname);
-		userFormik.setFieldValue('firstname', user.street);
-		userFormik.setFieldValue('firstname', user.house);
-		userFormik.setFieldValue('firstname', user.postal);
-		userFormik.setFieldValue('firstname', user.country);
-	}, [user]);
-
 	return (
 		<form onSubmit={userFormik.handleSubmit}>
 			<div className="row">
