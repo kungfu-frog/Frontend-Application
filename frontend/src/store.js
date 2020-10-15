@@ -9,7 +9,7 @@ const { setGlobalState, useGlobalState } = createGlobalState({
     street: "Ave",
     house: "9705 91a",
     postal: "T8V 0G7",
-    country: "Canada"
+    country: "Germany"
   },
   message: "",
   error: ""

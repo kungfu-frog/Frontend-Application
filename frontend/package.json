@@ -1,5 +1,5 @@
 {
-  "name": "react-simple-boilerplate",
+  "name": "test-project",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,12 +21,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public",
-    "format": "prettier --write 'src/**/*.{js,scss}'",
-    "lint": "eslint src",
-    "create-component": "node scripts/create-component.js"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,10 +34,6 @@
   ],
   "devDependencies": {
     "@babel/core": "^7.4.0",
-    "@storybook/addon-actions": "^5.1.9",
-    "@storybook/addon-links": "^5.1.9",
-    "@storybook/addons": "^5.1.9",
-    "@storybook/react": "^5.1.9",
     "storybook-react-router": "^1.0.5",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-prettier": "^3.0.1",
